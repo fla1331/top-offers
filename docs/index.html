@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Offers | Your Hub for Verified Deals & Top-Rated Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <style>
+        /* Definindo a paleta de cores para um visual de alta tecnologia e dinheiro */
+        :root {
+            --color-bg-dark: #000000; /* Fundo Preto */
+            --color-accent: #00ff99; /* Verde Neon */
+            --color-text-light: #e0e0e0;
+            --color-footer-dark: #0a0a0a;
+            --font-display: 'Montserrat', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg-dark);
+            color: var(--color-text-light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-bg {
+            background-color: var(--color-footer-dark);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .main-content {
+            /* Efeito de gradiente futurista (Verde Neon) */
+            background: radial-gradient(circle at center, rgba(0, 255, 153, 0.1) 0%, rgba(0, 0, 0, 1) 70%);
+            flex-grow: 1;
+        }
+
+        /* Animação de brilho sutil */
+        .neon-glow {
+            text-shadow: 0 0 10px rgba(0, 255, 153, 0.6);
+            animation: neon-pulse 3s infinite ease-in-out;
+        }
+
+        @keyframes neon-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.85; }
+        }
+
+        .icon-check {
+            color: var(--color-accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Padrão - Apenas Logo/Título -->
+    <header class="header-bg p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center max-w-7xl">
+            <h1 class="text-3xl font-extrabold tracking-tight" style="font-family: var(--font-display);">
+                <span class="icon-check text-4xl mr-1">✔</span> 
+                TOP OFFERS
+            </h1>
+        </div>
+    </header>
+
+    <!-- Main Content - Static Welcome -->
+    <main class="main-content flex items-center justify-center p-8">
+        <div class="text-center max-w-4xl space-y-8">
+            <!-- Creative Welcome Phrase -->
+            <p class="text-xl sm:text-2xl font-semibold neon-glow text-gray-300">
+                Your direct line to verified deals and expert ratings.
+            </p>
+            <h2 class="text-5xl sm:text-7xl font-black text-white leading-tight uppercase" style="font-family: var(--font-display);">
+                Welcome to Top Offers.
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">
+                We cut through the noise. Our mission is to analyze, test, and present only the best products, top deals, and verified opportunities from leading retailers globally.
+            </p>
+
+            <!-- Visual Placeholder for Future Content -->
+            <div class="mt-16 text-gray-500 text-base">
+                <p class="mb-2">We are currently curating the first batch of in-depth reviews and exclusive discounts.</p>
+                
+                <!-- Icons representing deals/products -->
+                <span class="mx-2 text-2xl" style="color:var(--color-accent);">$$</span> 
+                <span class="mx-2 text-2xl" style="color:var(--color-accent);">📦</span> 
+                <span class="mx-2 text-2xl" style="color:var(--color-accent);">🔥</span> 
+                <span class="mx-2 text-2xl" style="color:var(--color-accent);">⭐⭐⭐</span>
+                
+                <p class="mt-4 font-semibold text-white">Full reviews and top-rated offers launching soon!</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Standard Footer - Legal Text Only -->
+    <footer class="bg-gray-900 text-gray-500 py-8 border-t border-gray-800">
+        <div class="container mx-auto px-4 max-w-7xl text-center">
+            <p class="text-xs">&copy; 2025 Top Offers. Review Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
